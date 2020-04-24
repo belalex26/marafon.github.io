@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #000000;
+    /*font-family: 'Playfair Display', serif;*/
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/*ХЭДЕР*/
+
+.logo__title{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 46px;
+}
+
+.logo
+{
+    font-family: Playfair Display;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 47px;
+    letter-spacing: 1px;
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #000000;
+}
+
+.menu__link:hover{
+border-bottom: 2px solid #FF7931;
+transition: all 0.1s ease;
+}
+
+.menu__item{
+    list-style: none;
+}
+/*ИНФОРМАЦИЯ*/
+
+.info{
+    background: url(../images/bg.jpg);
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info__icon{
+    margin: 40px auto 0 auto;
+}
+
+.icon{
+    width: 55px; 
+    height: 55px;
+    background: #FF7931;;
+    border-radius: 50%;
+    position: relative;
+    align-self: center; 
+}
+
+.icon__img{
+    display: block;
+    position: absolute;
+    top:27%;
+    left: 25%;
+    
+}
+.info__title{
+    padding-top: 32px;
+    padding-bottom: 69px;
+}  
+
+.info__title-text{
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.info__description{
+    max-width: 456px;
+    padding-top: 69px;
+    padding-bottom: 48px;
+    margin: 0 auto;
+}
+
+.info__description-text{
+    font-size: 14px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/*ОБЗОРЫ*/
+
+.review__title{
+    padding-top: 44px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.title
+{
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.review__content-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 51px;
+}
+
+.review__card{
+    padding-left: 29px;
+}
+
+.review__card-link
+{
+    font-family: Playfair Display;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 31px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.review__card-link:hover{
+    color:#FF7931;
+    transition: all 0.3s ease;
+}
+
+.review__card-image{
+    display: block;
+    padding-bottom: 20px;
+}
+
+.review__card-title{
+    padding-bottom: 10px; 
+}
+
+.review__card-text{
+    line-height: 21px;
+    letter-spacing: 0px;
+}
+
+/* АБОНЕМЕНТЫ*/
+
+.ticket{
+    text-align: center;
+    background:
+    url(../images/Ellipse.png) no-repeat center,
+    #F7F7F7;
+    border-bottom: 50px solid #ffffff;
+}
+
+.ticket__content{
+    max-width: 370px;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+}
+
+.ticket__title{
+    display: block;
+    padding-top: 33px;
+    padding-bottom: 35px;
+}
+
+.ticket__content-title{
+    padding-bottom: 10px;
+    font-family: Playfair Display;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 23px;
+    line-height: 31px;
+}
+
+.ticket__content-link{
+    color: #000000;
+    text-decoration: none;
+}
+
+.ticket__content-text{
+    padding-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.ticket__content-line{
+    width: 100px;
+    height: 0px;
+    margin: 0 auto 29px auto;
+
+    opacity: 0.4;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/*кнопка*/
+
+.button{
+    width: 170px;
+    height: 47px;
+    border: 1px #FF7931 solid;
+    background-color: #FF7931;
+    
+    
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 11px 29px 11px 29px;
+}
+
+.button__icon{
+    margin-left: 7px;
+
+}
+
+.ticket__btn{
+    margin: 35px auto 50px auto;
+
+    text-align: center;
+}
+
+
+/*ФУТЕР*/
+
+.footer{
+    background-color: #575757;
+}
+
+.footer__title{
+    display: flex;
+    justify-content: center;
+    padding-top: 26px;
+    padding-bottom: 32px;
+}
+
+.logo--footer{
+    color: #FFFFFF;
+    font-size: 28px;
+    line-height: 37px;
+}
+
+.footer__menu{
+    padding-bottom: 46px;
+}
+
+.menu__link--footer{
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.menu__link--footer:hover{
+    border-bottom: 2px solid #FF7931;
+    transition: all 0.1s ease;
+}
+
+.footer__line{
+    height: 0;
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+}
+.social{
+
+    padding-top: 42px;
+    padding-bottom: 46px;
+}
+
+.social__icons-list{
+    display: flex;
+    justify-content: center;  
+}
+
+.social__icon-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 47px;
+    height: 47px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    margin-right: 14px;
+
+}
+
+.social__icon-item:hover{
+    border: 1px solid #FF7931;
+    background-color: #FF7931;
+    transition: all 0.1s ease;
+}
+
+.social__link{
+    display: block;
+    text-decoration: none;
+}
